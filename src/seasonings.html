@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WEB 2890 - Project 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="TODO: Project 2 ...">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../stylesheets/main.scss">
+</head>
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">Eating on a Dime</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="receipts/ChickenNoddle.html">Chicken Noodle Soup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="receipts/cookies.html">Chocolate Chip Cookies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="seasonings.html">Seasonings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+</body>
+
+<div class="main-container">
+    <main class="content-wrapper">
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-4 fw-bold text-primary mb-3">Seasonings Guide</h1>
+                        <p class="lead mb-0">Quick pairing tips and safe proportions for everyday cooking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="seasonings-grid" data-testid="seasonings-grid">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="seasoning-card card h-100 border-0 ">
+                                <div class="card-header bg-primary text-white">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-seedling" aria-hidden="true"></i>
+                                        <h2 class="h5 mb-0 fw-semibold">Garlic Powder</h2>
+                                    </div>
+                                    <small class="opacity-75">Sweet, pungent, and mellow when cooked</small>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-6 p-3 border-end border-bottom">
+                                            <h3 class="h6 fw-semibold text-success mb-2">
+                                                <i class="fas fa-heart text-success me-1" aria-hidden="true"></i>
+                                                Pairs Well With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- All meats and poultry</li>
+                                                <li>- Roasted vegetables</li>
+                                                <li>- Potatoes and rice</li>
+                                                <li>- Pasta sauces</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Top Right: Avoid With -->
+                                        <div class="col-6 p-3 border-bottom">
+                                            <h3 class="h6 fw-semibold text-warning mb-2">
+                                                <i class="fas fa-exclamation-triangle text-warning me-1"
+                                                    aria-hidden="true"></i>
+                                                Avoid With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Delicate desserts</li>
+                                                <li>- Raw preparations</li>
+                                                <li>- Overpowering amounts</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Bottom Left: Proportions -->
+                                        <div class="col-6 p-3 border-end">
+                                            <h3 class="h6 fw-semibold text-info mb-2">
+                                                <i class="fas fa-balance-scale text-info me-1" aria-hidden="true"></i>
+                                                Proportions
+                                            </h3>
+                                            <p class="small mb-0">Start with 1/2 tsp per lb of meat. Use 1/4 tsp for
+                                                delicate dishes.</p>
+                                        </div>
+                                        <!-- Bottom Right: Why I Like It -->
+                                        <div class="col-6 p-3">
+                                            <h3 class="h6 fw-semibold text-primary mb-2">
+                                                <i class="fas fa-star text-primary me-1" aria-hidden="true"></i>
+                                                Why I Like It
+                                            </h3>
+                                            <p class="small mb-0">More convenient than fresh, won't burn like fresh
+                                                garlic.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="seasoning-card card h-100 border-0"
+                                data-groups="Poultry,Beef,Pork,Fish,Veggies,Starches">
+                                <div class="card-header bg-primary text-white">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-circle-dot" aria-hidden="true"></i>
+                                        <h2 class="h5 mb-0 fw-semibold">Onion Powder</h2>
+                                    </div>
+                                    <small class="opacity-75">Sweet, savory depth without the bite</small>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-6 p-3 border-end border-bottom">
+                                            <h3 class="h6 fw-semibold text-success mb-2">
+                                                <i class="fas fa-heart text-success me-1" aria-hidden="true"></i>
+                                                Pairs Well With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Beef and pork</li>
+                                                <li>- Roasted potatoes</li>
+                                                <li>- Seasoning blends</li>
+                                                <li>- Soups and stews</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-bottom">
+                                            <h3 class="h6 fw-semibold text-warning mb-2">
+                                                <i class="fas fa-exclamation-triangle text-warning me-1"
+                                                    aria-hidden="true"></i>
+                                                Avoid With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Very delicate fish</li>
+                                                <li>- Sweet desserts</li>
+                                                <li>- Raw salads</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-end">
+                                            <h3 class="h6 fw-semibold text-info mb-2">
+                                                <i class="fas fa-balance-scale text-info me-1" aria-hidden="true"></i>
+                                                Proportions
+                                            </h3>
+                                            <p class="small mb-0">Use 1/2 tbs per lb meat. Pairs perfectly with garlic
+                                                powder 1:1.</p>
+                                        </div>
+                                        <div class="col-6 p-3">
+                                            <h3 class="h6 fw-semibold text-primary mb-2">
+                                                <i class="fas fa-star text-primary me-1" aria-hidden="true"></i>
+                                                Why I Like It
+                                            </h3>
+                                            <p class="small mb-0">Adds onion flavor without texture or tears while
+                                                chopping.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Smoked Paprika -->
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="seasoning-card card h-100 border-0"
+                                data-groups="Poultry,Beef,Pork,Veggies,Starches">
+                                <div class="card-header bg-primary text-white">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-fire" aria-hidden="true"></i>
+                                        <h2 class="h5 mb-0 fw-semibold">Smoked Paprika</h2>
+                                    </div>
+                                    <small class="opacity-75">Rich, smoky sweetness with vibrant color</small>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-6 p-3 border-end border-bottom">
+                                            <h3 class="h6 fw-semibold text-success mb-2">
+                                                <i class="fas fa-heart text-success me-1" aria-hidden="true"></i>
+                                                Pairs Well With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Chicken and pork</li>
+                                                <li>- Roasted vegetables</li>
+                                                <li>- Potatoes and rice</li>
+                                                <li>- Soups</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-bottom">
+                                            <h3 class="h6 fw-semibold text-warning mb-2">
+                                                <i class="fas fa-exclamation-triangle text-warning me-1"
+                                                    aria-hidden="true"></i>
+                                                Avoid With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Delicate white fish</li>
+                                                <li>- Fresh herbs (can clash)</li>
+                                                <li>- Too much heat</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-end">
+                                            <h3 class="h6 fw-semibold text-info mb-2">
+                                                <i class="fas fa-balance-scale text-info me-1" aria-hidden="true"></i>
+                                                Proportions
+                                            </h3>
+                                            <p class="small mb-0">Start with 1/4 tsp per lb. A little goes a long way.
+                                            </p>
+                                        </div>
+                                        <div class="col-6 p-3">
+                                            <h3 class="h6 fw-semibold text-primary mb-2">
+                                                <i class="fas fa-star text-primary me-1" aria-hidden="true"></i>
+                                                Why I Like It
+                                            </h3>
+                                            <p class="small mb-0">Adds smoky depth without heat or actual grilling.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cumin -->
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="seasoning-card card h-100 border-0" data-groups="Beef,Pork,Veggies,Starches">
+                                <div class="card-header bg-primary text-white">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                                        <h2 class="h5 mb-0 fw-semibold">Cumin</h2>
+                                    </div>
+                                    <small class="opacity-75">Warm, earthy, and slightly nutty</small>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-6 p-3 border-end border-bottom">
+                                            <h3 class="h6 fw-semibold text-success mb-2">
+                                                <i class="fas fa-heart text-success me-1" aria-hidden="true"></i>
+                                                Pairs Well With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Ground beef and pork</li>
+                                                <li>- Beans and lentils</li>
+                                                <li>- Chili and tacos</li>
+                                                <li>- Curries</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-bottom">
+                                            <h3 class="h6 fw-semibold text-warning mb-2">
+                                                <i class="fas fa-exclamation-triangle text-warning me-1"
+                                                    aria-hidden="true"></i>
+                                                Avoid With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Delicate fish</li>
+                                                <li>- Sweet dishes</li>
+                                                <li>- Italian cuisine</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-end">
+                                            <h3 class="h6 fw-semibold text-info mb-2">
+                                                <i class="fas fa-balance-scale text-info me-1" aria-hidden="true"></i>
+                                                Proportions
+                                            </h3>
+                                            <p class="small mb-0">Use 1/2 tsp per lb meat. Toast whole seeds first for
+                                                more flavor.</p>
+                                        </div>
+                                        <div class="col-6 p-3">
+                                            <h3 class="h6 fw-semibold text-primary mb-2">
+                                                <i class="fas fa-star text-primary me-1" aria-hidden="true"></i>
+                                                Why I Like It
+                                            </h3>
+                                            <p class="small mb-0">Essential for authentic Mexican and Middle Eastern
+                                                flavors.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Oregano -->
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="seasoning-card card h-100 border-0"
+                                data-groups="Poultry,Beef,Pork,Fish,Veggies,Starches">
+                                <div class="card-header bg-primary text-white">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                                        <h2 class="h5 mb-0 fw-semibold">Oregano</h2>
+                                    </div>
+                                    <small class="opacity-75">Robust, slightly bitter, and aromatic</small>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-6 p-3 border-end border-bottom">
+                                            <h3 class="h6 fw-semibold text-success mb-2">
+                                                <i class="fas fa-heart text-success me-1" aria-hidden="true"></i>
+                                                Pairs Well With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Tomato-based dishes</li>
+                                                <li>- Chicken and lamb</li>
+                                                <li>- Mediterranean vegetables</li>
+                                                <li>- Pizza and pasta</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-bottom">
+                                            <h3 class="h6 fw-semibold text-warning mb-2">
+                                                <i class="fas fa-exclamation-triangle text-warning me-1"
+                                                    aria-hidden="true"></i>
+                                                Avoid With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Mexican foods</li>
+                                                <li>- Sweet preparations</li>
+                                                <li>- New to cooking</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-end">
+                                            <h3 class="h6 fw-semibold text-info mb-2">
+                                                <i class="fas fa-balance-scale text-info me-1" aria-hidden="true"></i>
+                                                Proportions
+                                            </h3>
+                                            <p class="small mb-0">Use 1/2 tsp dried per lb meat. Add near end of
+                                                cooking.</p>
+                                        </div>
+                                        <div class="col-6 p-3">
+                                            <h3 class="h6 fw-semibold text-primary mb-2">
+                                                <i class="fas fa-star text-primary me-1" aria-hidden="true"></i>
+                                                Why I Like It
+                                            </h3>
+                                            <p class="small mb-0">Instantly makes anything taste Mediterranean and
+                                                sophisticated. Adds more formality to Italian Cuisine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Basil -->
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="seasoning-card card h-100 border-0" data-groups="Poultry,Fish,Veggies,Starches">
+                                <div class="card-header bg-primary text-white">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="fas fa-spa" aria-hidden="true"></i>
+                                        <h2 class="h5 mb-0 fw-semibold">Basil</h2>
+                                    </div>
+                                    <small class="opacity-75">Sweet, peppery, and fresh when dried</small>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-6 p-3 border-end border-bottom">
+                                            <h3 class="h6 fw-semibold text-success mb-2">
+                                                <i class="fas fa-heart text-success me-1" aria-hidden="true"></i>
+                                                Pairs Well With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Tomatoes and mozzarella</li>
+                                                <li>- Chicken and fish</li>
+                                                <li>- Pasta and pizza</li>
+                                                <li>- Mediterranean dishes</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-bottom">
+                                            <h3 class="h6 fw-semibold text-warning mb-2">
+                                                <i class="fas fa-exclamation-triangle text-warning me-1"
+                                                    aria-hidden="true"></i>
+                                                Avoid With
+                                            </h3>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li>- Heavy red meats</li>
+                                                <li>- Spicy dishes</li>
+                                                <li>- Long cooking times</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 p-3 border-end">
+                                            <h3 class="h6 fw-semibold text-info mb-2">
+                                                <i class="fas fa-balance-scale text-info me-1" aria-hidden="true"></i>
+                                                Proportions
+                                            </h3>
+                                            <p class="small mb-0">Use 1/4 tsp dried per serving. Add at end to preserve
+                                                flavor.</p>
+                                        </div>
+                                        <div class="col-6 p-3">
+                                            <h3 class="h6 fw-semibold text-primary mb-2">
+                                                <i class="fas fa-star text-primary me-1" aria-hidden="true"></i>
+                                                Why I Like It
+                                            </h3>
+                                            <p class="small mb-0">Brightens any dish and pairs perfectly with tomatoes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Footer section-->
+<footer class="footer bg-dark text-light">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h5 class="mb-3">About Eating on a Dime</h5>
+                <p class="text-light opacity-75">
+                    We believe great food doesn't have to cost a fortune. Our family-tested recipes help you create
+                    delicious,
+                    nutritious meals on any budget.
+                </p>
+                <p class="text-light opacity-75 mb-0">
+                    <strong>Fast, tasty, budget-friendly.</strong>
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="/" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                            <i class="fas fa-utensils me-2" aria-hidden="true"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/seasonings.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                            <i class="fas fa-pepper-hot me-2" aria-hidden="true"></i>
+                            Seasonings Guide
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <h5 class="mb-3">Stay Connected</h5>
+                <p class="text-light opacity-75 mb-3">
+                    Follow us for the latest budget-friendly recipes and money-saving tips.
+                </p>
+                <div class="d-flex gap-3 mb-4">
+                    <a href="#" class="text-light fs-4" aria-label="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4" aria-label="Pinterest">
+                        <i class="fab fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4" aria-label="YouTube channel">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <h6 class="mb-2">Get Recipe Updates</h6>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email address"
+                            aria-label="Email address for newsletter">
+                        <button class="btn btn-accent" type="submit" aria-label="newsletter">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom border-top border-secondary pt-4 pb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0 small text-light opacity-50">
+                        @ 2025 Eating on a Dime - Family Edition
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#top" class="btn btn-outline-light btn-sm" aria-label="Back to top of page">
+                        <i class="fas fa-arrow-up me-1" aria-hidden="true"></i>
+                        Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -1,3 +1,200 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+$primary: #2B6CB0;
+$accent: #ED8936;
+$dark: #1A202C;
+$light: #F7FAFC;
+$success: #48BB78;
+$warning: #ED8936;
+
+$font-size-xs: .8rem;
+$font-size-sm: .9rem;
+$font-size-normal: 1rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.5rem;
+
+$border-radius-full: 50rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+.border-primary{ 
+    border: 2px solid $primary;
+  background-color: transparent;
+  border-radius: 10px;
+
+}
+
+.text-dark {
+    color: $dark
+}
+
+.navbar {
+    .navbar-brand {
+        color: $primary !important;
+        font-weight: 700;
+        font-size: 1.75rem;
+    }
+
+    .nav-link {
+        color: $dark !important;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-right: 1rem;
+
+
+        &:hover {
+            color: $primary !important;
+        }
+
+        &.active {
+            color: $primary !important;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: $accent;
+        }
+    }
+}
+
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba($dark, 0.1);
+    height: 100%;
+
+    .recipe-card__image {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            padding-top: (9 / 16) * 100%;
+        }
+
+        >* {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        overflow: hidden;
+
+        img {
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .recipe-card__title {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        margin-bottom: 0.5rem;
+        color: $dark;
+        font-size: $font-size-xl;
+    }
+
+    .recipe-card__description {
+        color: lighten($dark, 20%);
+        font-size: $font-size-sm;
+        margin-bottom: 1rem;
+    }
+
+    .rating__text {
+        font-size: $font-size-sm;
+        color: lighten($dark, 30%);
+        margin-left: 0.25rem;
+    }
+
+    .recipe-card__meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: $font-size-sm;
+        color: lighten($dark, 30%);
+    }
+
+}
+
+.seasoning-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba($dark, 0.8);
+    height: 100%;
+    text-align: center;
+    padding: 2rem 1.5rem;
+
+    .seasoning-card__icon {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 auto 1rem;
+        background: linear-gradient(135deg, $primary, $accent);
+        border-radius: $border-radius-full;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .seasoning-card__title {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-lg;
+        color: $dark;
+        margin-bottom: 0.5rem;
+    }
+
+    .seasoning-card__description {
+        color: lighten($dark, 20%);
+        font-size: $font-size-sm;
+    }
+
+}
+
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    .rating__stars {
+        display: flex;
+        gap: 0.125rem;
+    }
+
+    .rating__star {
+        width: 1.2rem;
+        height: 1.2rem;
+        color: #E2E8F0;
+
+        &.rating__star--filled {
+            color: #FFD700;
+        }
+    }
+
+    .rating__text {
+        font-size: $font-size-sm;
+        color: lighten($dark, 30%);
+        margin-left: 0.25rem;
+    }
+}
+
