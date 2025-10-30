@@ -7,22 +7,308 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Project 2 ...">
-
-  <link rel="stylesheet" href="./stylesheets/main.scss">
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="/">Eating on a Dime</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="receipts/ChickenNoddle.html">Chicken Noodle Soup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="receipts/cookies.html">Chocolate Chip Cookies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="seasonings.html">Seasonings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <script type="module" src="./javascripts/main.js"></script>
+
+  <div class="main-container">
+    <main class="content-wrapper">
+      <!-- Fast, tasty header section -->
+      <section class="py-4 py-lg-5" aria-labelledby="here">
+        <div class="container">
+          <div class="row align-items-center min-vh-25">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <h1 id="here" class="display-4 fw-bold text-dark mb-3">
+                Fast, tasty, budget-friendly
+              </h1>
+              <p class="lead text-muted mb-4">
+                Straight to ingredients, steps, and smart serving sizes
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="d-flex flex-column flex-sm-row gap-3 justify-content-lg-end">
+                <a href="recipes/index.html" class="btn btn-primary btn-lg" aria-label="View recipe">
+                  <i class="fas fa-utensils me-2" aria-hidden="true"></i>
+                  View Recipes
+                </a>
+                <a href="seasonings.html" class="btn btn-outline-primary btn-lg" aria-label="Explore seasonings">
+                  <i class="fas fa-pepper-hot me-2" aria-hidden="true"></i>
+                  Explore Seasonings
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- List Recipes -->
+      <section id="featured-recipes" class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="text-dark h3 fw-semibold mb-2">Featured Recipes</h2>
+              <p class="text-muted">Customer Favorites</p>
+            </div>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <article class="recipe-card h-100" role="article">
+                <a href="./receipts/ChickenNoddle.html" class="text-decoration-none" aria-labelledby="recipe-1-title">
+                  <div class="recipe-card__image">
+                    <img src="images/Chicken noodle soup.jpg" alt="Warm bowl of chicken noodle soup with carrots and celery" width="400" height="225" class="img-cover">
+                  </div>
+                  <div class="p-3">
+                    <h3 id="recipe-1-title" class="fw-semibold recipe-card__title">
+                      Chicken Noodle Soup
+                    </h3>
+                    <p class="recipe-card__description">
+                      Warm and hearty chicken noodle soup in 25 minutes with minimal cleanup
+                    </p>
+                    
+                    <!-- Chicken Noolde Soup ratings -->
+                    <div class="rating mb-3" aria-label="4.8 out of 5 stars">
+                      <div class="rating__stars">
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star" aria-hidden="true"></i>
+                      </div>
+                      <span class="rating__text">(127 reviews)</span>
+                    </div>
+
+                    <div class="recipe-card__meta d-flex justify-content-between">
+                      <div class="recipe-card__time">
+                        <span class="sr-only">Total time:</span>
+                        25 min
+                      </div>
+                      <div class="recipe-card__difficulty">
+                        <span class="badge bg-primary">Meduim</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <article class="recipe-card h-100" role="article">
+                <a href="./receipts/cookies.html" class="text-decoration-none" aria-labelledby="recipe-2-title">
+                  <div class="recipe-card__image">
+                    <img src="images/joyful-G4zLsxLIpAA-unsplash.jpg" alt="chocolate chip cookies with melted chips"
+                      loading="lazy" width="400" height="225" class="img-cover">
+                  </div>
+                  <div class="p-3">
+                    <h3 id="recipe-2-title" class="fw-semibold recipe-card__title">
+                      Chocolate Chip Cookies
+                    </h3>
+                    <p class="recipe-card__description">
+                      Chewy centers, crisp edges-our classic family favorite
+                    </p>
+
+                    <div class="rating mb-3" aria-label="4.6 out of 5 stars">
+                      <div class="rating__stars">
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star rating__star--filled" aria-hidden="true"></i>
+                        <i class="fas fa-star rating__star rating__star" aria-hidden="true"></i>
+                      </div>
+                      <span class="rating__text">(120+ reviews)</span>
+                    </div>
+
+                    <div class="recipe-card__meta">
+                      <div class="recipe-card__time">
+                        <span class="sr-only">Total time:</span>
+                        35 min
+                      </div>
+                      <div class="recipe-card__difficulty">
+                        <span class="badge bg-primary">Easy</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="h3 fw-semibold text-dark mb-2">Seasoning Spotlight</h2>
+              <p class="text-muted">Transform simple ingredients with the right spices</p>
+            </div>
+          </div>
+
+          <div class="row g-3 justify-content-center">
+            <!-- Garlic Powder -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="seasoning-card">
+                <div class="seasoning-card__icon">
+                  <i class="fas fa-seedling" aria-hidden="true"></i>
+                </div>
+                <h3 class="seasoning-card__title">Garlic Powder</h3>
+                <ul class="list-unstyled small text-muted mb-3">
+                  <li class="mb-1">Pairs well with: meats &amp; poultry, roasted veg, potatoes/rice, pasta sauces</li>
+                  <li>Avoid with: delicate desserts, raw dishes, heavy use</li>
+                </ul>
+                <a href="/seasonings.html" class="btn border-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Onion Powder -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="seasoning-card">
+                <div class="seasoning-card__icon">
+                  <i class="fas fa-circle-dot" aria-hidden="true"></i>
+                </div>
+                <h3 class="seasoning-card__title">Onion Powder</h3>
+                <ul class="list-unstyled small text-muted mb-3">
+                  <li class="mb-1">Pairs well with: beef &amp; pork, roasted potatoes, blends, soups/stews</li>
+                  <li>Avoid with: very delicate fish, sweet desserts, raw salads</li>
+                </ul>
+                <a href="/seasonings.html" class="btn border-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Smoked Paprika -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="seasoning-card">
+                <div class="seasoning-card__icon">
+                  <i class="fas fa-fire" aria-hidden="true"></i>
+                </div>
+                <h3 class="seasoning-card__title">Smoked Paprika</h3>
+                <ul class="list-unstyled small text-muted mb-3">
+                  <li class="mb-1">Pairs well with: chicken &amp; pork, roasted veg, potatoes/rice, deviled eggs</li>
+                  <li>Avoid with: delicate white fish, lots of fresh herbs, too much heat</li>
+                </ul>
+                <a href="/seasonings.html" class="btn border-primary btn-sm">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section-->
+   <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="mb-3">About Eating on a Dime</h5>
+            <p class="text-light opacity-75">
+              We believe great food doesn't have to cost a fortune. Our family-tested recipes help you create delicious,
+              nutritious meals on any budget.
+            </p>
+            <p class="text-light opacity-75 mb-0">
+              <strong>Fast, tasty, budget-friendly.</strong>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="/" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                  <i class="fas fa-utensils me-2" aria-hidden="true"></i>
+                  Home
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="/seasonings.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                  <i class="fas fa-pepper-hot me-2" aria-hidden="true"></i>
+                  Seasonings Guide
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <h5 class="mb-3">Stay Connected</h5>
+            <p class="text-light opacity-75 mb-3">
+              Follow us for the latest budget-friendly recipes and money-saving tips.
+            </p>
+            <div class="d-flex gap-3 mb-4">
+              <a href="#" class="text-light fs-4" aria-label="Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="text-light fs-4" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="text-light fs-4" aria-label="Pinterest">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="text-light fs-4" aria-label="YouTube channel">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div>
+              <h6 class="mb-2">Get Recipe Updates</h6>
+              <form class="d-flex">
+                <input type="email" class="form-control me-2" placeholder="Your email address"
+                  aria-label="Email address for newsletter">
+                <button class="btn btn-accent" type="submit" aria-label="newsletter">
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom border-top border-secondary pt-4 pb-3">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+              <p class="mb-0 small text-light opacity-50">
+                @ 2025 Eating on a Dime - Family Edition
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <a href="#top" class="btn btn-outline-light btn-sm" aria-label="Back to top of page">
+                <i class="fas fa-arrow-up me-1" aria-hidden="true"></i>
+                Back to Top
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

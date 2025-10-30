@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WEB 2890 - Project 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="TODO: Project 2 ...">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../stylesheets/main.scss">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="/">Eating on a Dime</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ChickenNoddle.html">Chicken Noodle Soup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cookies.html">Chocolate Chip Cookies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../seasonings.html">Seasonings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-container">
+        <main class="content-wrapper">
+            <section class="recipe-hero" data-testid="recipe-hero">
+                <div class="container-fluid px-0">
+                    <div class="position-relative">
+                        <img src="../images/Chicken noodle soup.jpg" alt="Chicken Noodle Soup" class="img-fluid w-100"
+                            style="height: 400px; object-fit: cover; object-position: center;">
+
+                        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="hero-content text-black p-4 mb-4">
+                                            <h1 class="display-4 fw-bold mb-3">Chicken Noodle Soup</h1>
+                                            <p class="lead mb-0 fw-bold">A cozy, nourishing classic made with chicken,
+                                                veggies, and egg noodles-perfect for cold days.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recipe-summary py-4 bg-light" data-testid="recipe-summary">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-clock text-primary me-3 fs-4" aria-hidden="true"></i>
+                                <div>
+                                    <div class="fw-semibold">Total Time</div>
+                                    <div class="text-muted">45 minutes</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-cookie-bite text-primary me-3 fs-4" aria-hidden="true"></i>
+                                <div>
+                                    <div class="fw-semibold">Yield</div>
+                                    <div class="text-muted">8 cups (4-6 servings)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-signal text-primary me-3 fs-4" aria-hidden="true"></i>
+                                <div>
+                                    <div class="fw-semibold">Difficulty</div>
+                                    <div class="text-muted">Easy</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-utensils text-primary me-3 fs-4" aria-hidden="true"></i>
+                                <div>
+                                    <div class="fw-semibold">Category</div>
+                                    <div class="text-muted">Soup</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Times  -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="bg-white p-3 rounded-3 border">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="fw-semibold text-primary">Prep</div>
+                                        <div>10 min</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="fw-semibold text-primary">Cook</div>
+                                        <div>35 min</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="fw-semibold text-primary">Total</div>
+                                        <div>45 min</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">Classic Recipe</span>
+                                <span class="badge bg-primary">Comfort Food</span>
+                                <span class="badge bg-primary">Family Favorite</span>
+                                <span class="badge bg-primary">One-Pot Meal</span>
+                                <span class="badge bg-primary">Weeknight Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5" data-testid="recipe-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="recipe-calculator mb-4" data-testid="recipe-calculator">
+                                <div class="bg-light p-4 rounded-3 border">
+                                    <h3 class="h5 fw-semibold mb-3">
+                                        <i class="fas fa-calculator text-primary me-2" aria-hidden="true"></i>
+                                        Servings Calculator
+                                    </h3>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <label for="servings-input" class="form-label mb-0 fw-medium">Servings:</label>
+                                        <div class="d-flex align-items-center">
+                                            <button type="button" class="btn btn-outline-primary btn-sm"
+                                                id="decrease-servings" aria-label="Decrease servings">
+                                                <i class="fas fa-minus" aria-hidden="true"></i>
+                                            </button>
+                                            <input type="number" id="servings-input"
+                                                class="form-control text-center mx-2" value="12" min="1" max="48"
+                                                style="width: 70px;" aria-describedby="servings-help">
+                                            <button type="button" class="btn btn-outline-primary btn-sm"
+                                                id="increase-servings" aria-label="Increase servings">
+                                                <i class="fas fa-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div id="servings-help" class="form-text">
+                                        Recipe scales from #-# servings (# cups per serving)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipe-ingredients" data-testid="recipe-ingredients">
+                                <h2 class="h4 fw-semibold mb-4">
+                                    <i class="fas fa-list text-primary me-2" aria-hidden="true"></i>
+                                    Ingredients
+                                </h2>
+                                <ul class="list-unstyled" data-base-servings="6">
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="1">1 lb</span>&nbsp;chicken breasts or tenderloins
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="1">1</span>&nbsp;onion
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="2">2</span>&nbsp;carrots
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="2">2</span>&nbsp;celery stalks
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="2">2 cups</span>&nbsp;cut egg noodles
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="1">1</span>&nbsp;chicken bouillon
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="1">1 tsp</span>&nbsp;minced garlic
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="1">1 tsp</span>&nbsp;onion & garlic powder
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="0.5">1/2 tsp</span>&nbsp;Italian seasoning
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="0.25">1/4 tsp</span>&nbsp;oregano
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="0.25">1/4 tsp</span>&nbsp;dill weed
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span data-qty="0.125">1/8 tsp</span>&nbsp;rosemary, sage & basil
+                                    </li>
+                                    <li class="ingredient-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-circle text-primary me-3 mt-2" style="font-size: 0.5rem;"
+                                            aria-hidden="true"></i>
+                                        <span>Salt & pepper</span>&nbsp;to taste
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="ingredient-item" data-testid="recipe-steps">
+                                <h2 class="h4 fw-semibold mb-4">
+                                    <i class="fas fa-clipboard-list text-primary me-2" aria-hidden="true"></i>
+                                    Instructions
+                                </h2>
+
+                                <div class="steps-container">
+                                    <div class="step-item mb-4 p-4 bg-white rounded-3 border">
+                                        <div class="d-flex gap-4">
+                                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 40px; height: 40px;">
+                                                <span class="fw-semibold">1</span>
+                                            </div>
+                                            <div>
+                                                <h3 class="h6 fw-semibold mb-2">Cook & shred the chicken</h3>
+                                                <p class="mb-0">Defrost if needed. Boil chicken in water until fully
+                                                    cooked. Drain, let cool slightly, then shred and set aside.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item mb-4 p-4 bg-light rounded-3">
+                                        <div class="d-flex gap-4">
+                                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 40px; height: 40px;">
+                                                <span class="fw-semibold">2</span>
+                                            </div>
+                                            <div>
+                                                <h3 class="h6 fw-semibold mb-2">Saute the vegetables</h3>
+                                                <p class="mb-0">In the same pot, heat 1 Tbsp olive oil. Add chopped
+                                                    onion, carrots, and celery. Cook, stirring, until slightly browned
+                                                    and fragrant (about 3-5 minutes).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item mb-4 p-4 bg-white rounded-3 border">
+                                        <div class="d-flex gap-4">
+                                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 40px; height: 40px;">
+                                                <span class="fw-semibold">3</span>
+                                            </div>
+                                            <div>
+                                                <h3 class="h6 fw-semibold mb-2">Add broth, chicken & seasonings</h3>
+                                                <p class="mb-0">Return shredded chicken to the pot. Add chicken broth
+                                                    (or water + bouillon), minced garlic, onion and garlic powder,
+                                                    Italian seasoning, oregano, dill, rosemary, sage, and basil. Season
+                                                    with salt and pepper. Bring to a boil and cook for about 10
+                                                    minutes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item mb-4 p-4 bg-light rounded-3">
+                                        <div class="d-flex gap-4">
+                                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 40px; height: 40px;">
+                                                <span class="fw-semibold">4</span>
+                                            </div>
+                                            <div>
+                                                <h3 class="h6 fw-semibold mb-2">Simmer & cook noodles</h3>
+                                                <p class="mb-0">Lower heat to a gentle simmer. Add egg noodles and cook
+                                                    until tender, about 7-10 minutes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step-item mb-4 p-4 bg-white rounded-3 border">
+                                        <div class="d-flex gap-4">
+                                            <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 40px; height: 40px;">
+                                                <span class="fw-semibold">5</span>
+                                            </div>
+                                            <div>
+                                                <h3 class="h6 fw-semibold mb-2">Finish & serve</h3>
+                                                <p class="mb-0">Taste and adjust salt & pepper. Ladle into bowls and
+                                                    enjoy warm.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<!-- Footer section-->
+<footer class="footer bg-dark text-light">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <h5 class="mb-3">About Eating on a Dime</h5>
+                <p class="text-light opacity-75">
+                    We believe great food doesn't have to cost a fortune. Our family-tested recipes help you create
+                    delicious,
+                    nutritious meals on any budget.
+                </p>
+                <p class="text-light opacity-75 mb-0">
+                    <strong>Fast, tasty, budget-friendly.</strong>
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="/" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                            <i class="fas fa-utensils me-2" aria-hidden="true"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="/seasonings.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                            <i class="fas fa-pepper-hot me-2" aria-hidden="true"></i>
+                            Seasonings Guide
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <h5 class="mb-3">Stay Connected</h5>
+                <p class="text-light opacity-75 mb-3">
+                    Follow us for the latest budget-friendly recipes and money-saving tips.
+                </p>
+                <div class="d-flex gap-3 mb-4">
+                    <a href="#" class="text-light fs-4" aria-label="Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4" aria-label="Pinterest">
+                        <i class="fab fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="text-light fs-4" aria-label="YouTube channel">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <h6 class="mb-2">Get Recipe Updates</h6>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email address"
+                            aria-label="Email address for newsletter">
+                        <button class="btn btn-accent" type="submit" aria-label="newsletter">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom border-top border-secondary pt-4 pb-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0 small text-light opacity-50">
+                        @ 2025 Eating on a Dime - Family Edition
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#top" class="btn btn-outline-light btn-sm" aria-label="Back to top of page">
+                        <i class="fas fa-arrow-up me-1" aria-hidden="true"></i>
+                        Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
