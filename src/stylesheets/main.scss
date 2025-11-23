@@ -145,6 +145,9 @@ body {
   }
 }
 
+.btn-primary {
+  background-color: #0d6efd !important;
+}
 .hero {
   background: radial-gradient(circle at top left, rgba($accent, 0.08), transparent 55%), radial-gradient(circle at bottom right, rgba($primary, 0.08), transparent 55%);
   border-bottom: 1px solid rgba($dark, 0.06);
